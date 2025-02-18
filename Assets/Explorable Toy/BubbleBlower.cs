@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BubbleBlower : MonoBehaviour
 {
+    public GameObject prefab; // Public allows me to input my bubble prefab
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,11 @@ public class BubbleBlower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public void Spawn()
+    {
+        Instantiate(prefab);
     }
 }
+
