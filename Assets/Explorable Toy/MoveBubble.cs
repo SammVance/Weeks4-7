@@ -11,7 +11,7 @@ public class MoveBubble : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, time); // Destroy after 10 seconds
+        Destroy(gameObject, time);
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class MoveBubble : MonoBehaviour
     {
         Vector3 pos = transform.position;
         pos.x += speed * Time.deltaTime;
-        pos.y += speed * Time.deltaTime;
+        //pos.y += speed * Time.deltaTime;
 
         transform.position = pos;
 
