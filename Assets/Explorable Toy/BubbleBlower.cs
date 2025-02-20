@@ -20,6 +20,8 @@ public class BubbleBlower : MonoBehaviour
     public void Spawn()
     {
         Instantiate(prefab);
+        // Spawns the bubble prefab
+        // I can grab this Spawn() function from the button
     }
 }
 
